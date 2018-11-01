@@ -21,16 +21,14 @@ export class InfoPaginaService {
     this.http.get('assets/data/data-pagina.json')
       .subscribe((resp: InfoPagina) => {
         this.cargada = true;
-        this.info = resp;
-        console.log(resp);
+        this.info = resp;        
       });
   }
 
   private cargarEquipo() {
     this.http.get('https://angular-html-7baac.firebaseio.com/equipo.json')
       .subscribe((resp: any) => {
-        this.equipo = resp;
-        console.log('datos firebase', resp);
+        this.equipo = resp;        
       })
   }
 }

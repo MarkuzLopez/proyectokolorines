@@ -10,8 +10,7 @@ export class PortafolioComponent implements OnInit {
 
   constructor(public serviceProduct: ProductosService) { }
 
-  ngOnInit() {
-    console.log('Datos =>', this.serviceProduct);
+  ngOnInit() {    
   }
 
 }
