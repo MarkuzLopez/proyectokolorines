@@ -20,7 +20,7 @@ export class ProductosService {
     //  declaracion de promesa para indicar que cargo de manera correcta
     return new Promise((resolve, reject) => {
       this.http
-        .get("https://angular-html-7baac.firebaseio.com/productos_idx.json")
+        .get("https://angular-html-7baac.firebaseio.com/productos_idx2.json")
         .subscribe((resp: Producto[]) => {
           console.log(resp);
           this.productos = resp;
@@ -32,7 +32,7 @@ export class ProductosService {
 
   getProducto(id: string) {
     return this.http.get(
-      `https://angular-html-7baac.firebaseio.com/productos/${id}.json`
+      `https://angular-html-7baac.firebaseio.com/productos2/${id}.json`
     );
   }
 

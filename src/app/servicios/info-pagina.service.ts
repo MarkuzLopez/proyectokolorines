@@ -13,7 +13,7 @@ export class InfoPaginaService {
 
   constructor(private http: HttpClient) {
     console.log('sevicio pahina');
-    this.cargarEquipo();
+    this.cargarEquipo2();
     this.cargarInfo();
   }
 
@@ -30,5 +30,12 @@ export class InfoPaginaService {
       .subscribe((resp: any) => {
         this.equipo = resp;        
       })
+  }
+
+  private cargarEquipo2() { 
+    this.http.get('https://angular-html-7baac.firebaseio.com/equipo2.json').
+       subscribe((resp: any) => { 
+         this.equipo = resp;
+       })
   }
 }

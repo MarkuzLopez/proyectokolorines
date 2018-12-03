@@ -13,6 +13,8 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { ItemComponent } from './components/pages/item/item.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BuscarComponent } from './components/pages/buscar/buscar.component';
+import { BlogComponent } from './components/pages/blog/blog.component';
+import { ContactosComponent } from './components/pages/contactos/contactos.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { BuscarComponent } from './components/pages/buscar/buscar.component';
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
-    BuscarComponent
+    BuscarComponent,
+    BlogComponent,
+    ContactosComponent
   ],
   imports: [
     BrowserModule,
